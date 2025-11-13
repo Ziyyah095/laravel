@@ -3,9 +3,17 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return 'Ini route utama';
+    return view('welcome');
+});
+
+Route::get('/product', function () {
+    return view('product');
 });
 
 Route::get('/cart', function () {
-    return 'Ini halaman cart';
+    return view('cart');
+});
+
+Route::get('/checkout', function () {
+    return view('checkout');
 });
